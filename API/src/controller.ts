@@ -1,7 +1,7 @@
 import type{ Request, Response } from 'express';
 import { GoogleGenAI} from "@google/genai";
 
-const genAI = new GoogleGenAI({apiKey:'AIzaSyBIw0do3MFlZabQTNa_ISryw9dk4uon6Lw'}) ;
+const genAI = new GoogleGenAI({apiKey:process.env.API}) ;
 // const chat = model.startChat({
 //     history: [
 //     {
