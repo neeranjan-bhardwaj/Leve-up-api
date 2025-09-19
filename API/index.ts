@@ -4,7 +4,7 @@ import cors from 'cors'
 import { authentication, Login, signup } from './src/AUTHController';
 
 const app = express();
-const port = 3300;
+const port = 5000;
 
 app.use(express.json());
 app.use(cors());
@@ -14,5 +14,5 @@ app.route('/Login').post(Login);
 app.route('/signup').post(signup);
 
 app.listen(port, () => {
-    console.log(`Server is running on http://localhost:${port}`);
+    console.log(`Server is running `);
 });
