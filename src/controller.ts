@@ -113,7 +113,7 @@ export async function getRoadmap(req: Request, res: Response): Promise<void> {
         if(!query) throw 'can not find query in request body';
         console.log(query);
         const response = await generateContent(query);
-        // console.log(response);
+        console.log("Response is send");
         console.log("Roadmap API called");
         res.json({ message: response });
     }catch(err){
