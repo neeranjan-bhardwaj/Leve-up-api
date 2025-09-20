@@ -10,8 +10,8 @@ app.use(express.json());
 app.use(cors());
 
 app.route('/Roadmap').post(getRoadmap);
-app.route('/Login').post(Login);
-app.route('/signup').post(signup);
+// app.route('/Login').post(Login);
+// app.route('/signup').post(signup);
 
 app.listen(port, () => {
     console.log(`Server is running `);
